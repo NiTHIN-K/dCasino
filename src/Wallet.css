@@ -1,0 +1,110 @@
+
+.wallet-button{
+  width: 60px;
+  height: 60px;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+  border: none;
+  padding: 4px;
+
+  cursor: pointer;
+  user-select: none;
+
+  /* Fix this */
+  filter: invert(1);
+  opacity: .5;
+  transition-duration: 100ms;
+  animation: fadeIn 300ms forwards;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: .5;
+  }
+}
+
+.wallet .wallet-button:hover{
+  opacity: 1!important;
+  transform: scale(1.06)!important;
+}
+
+.wallet .wallet-button:active{
+  transform: scale(.94)!important;
+}
+
+.wallet-details{
+  width: 300px;
+  height: 450px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: rgb(0 0 0 / .3);
+  border-radius: 3px;
+
+  padding: 14px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition-duration: 100ms;
+
+}
+
+.wallet-details.wallet-open{
+  opacity: 1;
+  
+  pointer-events: all;
+}
+
+.wallet-details > h3{
+  color: #eee;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  margin: 10px 0;
+}
+
+.wallet-details > p{
+  position: relative;
+  color: #ccc;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  margin: 10px 0 25px 0;
+}
+
+.wallet-details > .wallet-account{
+  text-indent: 26px;
+}
+
+.copy-action{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 18px;
+  cursor: pointer;
+  opacity: .9;
+  transition-duration: 100ms;
+  filter: invert(1);
+}
+
+.copy-action:hover{
+  opacity: .6;
+}
+
+.copy-action:active{
+  transform: scale(.9);
+}
+
+
+

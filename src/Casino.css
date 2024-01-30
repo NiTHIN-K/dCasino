@@ -1,0 +1,46 @@
+#casino{
+  width: 1000px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 300px 1fr 1fr;
+  grid-template-rows: 150px 1fr;
+}
+
+#casino > .box{
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  /* overflow: hidden; */
+}
+
+#clock-section{
+  border-top-right-radius: 7px;
+  overflow: hidden;
+}
+
+#bidding-section{
+  background-color: transparent!important;
+  background: transparent!important;
+}
+
+#game-section{
+  position: relative;
+  max-width: 800px;
+  max-height: 800px;
+  padding: 50px;
+  grid-column: 2 / 4;
+  border-bottom-right-radius: 7px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-section{
+  border-top-left-radius: 7px;
+}
+
+#participants-section{
+  position: relative;
+  border-bottom-left-radius: 7px;
+}
